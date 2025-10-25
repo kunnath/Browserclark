@@ -32,6 +32,10 @@ To build and run the Docker container for this application, follow these steps:
    After building the image, you can run the container using:
    ```
    docker run -p 8501:8501 python-docker-app streamlit run demo/streamlit_browser_agent_test_async.py
+
+   or
+
+   docker run -v "$(pwd)/demo/automation_reports:/app/automation_reports" -p 8501:8501 python-docker-app
    ```
 
    This command will start the Streamlit application, which can be accessed at `http://localhost:8501`.
