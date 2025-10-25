@@ -1,6 +1,7 @@
 # Python Docker App
 
 This project is a Dockerized Python application that includes two main scripts: `app.py` and `copyreport.py`. The application is designed to run a Streamlit web interface for a browser agent and manage file operations related to automation reports.
+![Demo Screenshot](demo.png)
 
 ## Project Structure
 
