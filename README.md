@@ -1,7 +1,37 @@
 # Python Docker App
 
 This project is a Dockerized Python application that includes two main scripts: `app.py` and `copyreport.py`. The application is designed to run a Streamlit web interface for a browser agent and manage file operations related to automation reports.
+
+## Features (Initial Release)
+
+- **Streamlit UI** for easy task input and status monitoring
+- **Automated browser tasks** using AI agents (DeepSeek API supported)
+- **Automatic screenshot capture** at every major step
+- **Comprehensive HTML and JSON reports** generated after each run
+- **Demo mode** with simulated screenshots if browser automation is unavailable
+- **Organized folder structure** for all reports and screenshots
+- **Automatic management** of screenshots and report files
+- **Status updates** and error handling in the UI
+
+## Demo
+
 ![Demo Screenshot](demo.png)
+
+## How It Works
+
+1. Fill in the form with your DeepSeek API key, target website, and task description.
+2. Click "Start Automation" to begin the browser task.
+3. Watch status updates in the sidebar.
+4. Screenshots are automatically captured and organized.
+5. Generate and view your report with all screenshots and results.
+6. Access all files in the `automation_reports` folder.
+
+## Output
+
+- **HTML Report**: Visual summary of the automation run
+- **JSON Data**: Machine-readable results and metadata
+- **Screenshots**: All images captured during automation
+- **Organized Folders**: Timestamped directories for each run
 
 ## Project Structure
 
