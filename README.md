@@ -68,6 +68,11 @@ To build and run the Docker container for this application, follow these steps:
 
    This command will start the Streamlit application, which can be accessed at `http://localhost:8501`.
 
+  After run the image, you can run the container exec copyreport.py using:
+
+docker exec -it 721b0f6360a2 python3 copyreport.py
+
+
 ## Usage
 
 - **Streamlit Application:** The `app.py` script provides a web interface for interacting with the browser agent.
