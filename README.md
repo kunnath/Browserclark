@@ -1,4 +1,4 @@
-# Python Docker App
+# Browserclark / Python Docker App
 
 This project is a Dockerized Python application that includes two main scripts: `app.py` and `copyreport.py`. The application is designed to run a Streamlit web interface for a browser agent and manage file operations related to automation reports.
 
@@ -56,21 +56,21 @@ To build and run the Docker container for this application, follow these steps:
 1. **Build the Docker Image:**
    Navigate to the project directory and run the following command:
    ```
-   docker build -t python-docker-app .
+   docker build -t browserclark .
    ```
 
 2. **Run the Docker Container:**
    After building the image, you can run the container using:
    ```
 
-   docker run -v "$(pwd)/demo/automation_reports:/app/automation_reports" -p 8501:8501 python-docker-app
+   docker run -v "$(pwd)/demo/automation_reports:/app/automation_reports" -p 8501:8501 browserclark
    ```
 
    This command will start the Streamlit application, which can be accessed at `http://localhost:8501`.
 
 ## Usage
 
-- **Streamlit Application:** The `streamlit_browser_agent_test_async.py` script provides a web interface for interacting with the browser agent.
+- **Streamlit Application:** The `app.py` script provides a web interface for interacting with the browser agent.
 - **File Operations:** The `copyreport.py` script is responsible for copying files from the agent run folder to the `automation_reports` directory.
 
 ## Contributing
